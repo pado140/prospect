@@ -1,0 +1,27 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.1.10/c3_management
+    username: Editions
+    password: C3editions@_21
+  mvc:
+    format:
+      date: "yyyy-MM-dd"
+      date-time: "MM/dd/yyyy HH:mm:ss"
+  jpa:
+    show-sql: false
+
+files.uploads: "I:/PROSPECT"
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://discovery.local:8081/eureka"
+
+  instance:
+    hostname: api.contact.local
+    appname: "PROSPECT"
+    instance-id: PROSPECT:8081
